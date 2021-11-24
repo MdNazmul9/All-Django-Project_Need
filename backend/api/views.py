@@ -5,7 +5,8 @@ from braces.views import LoginRequiredMixin, SuperuserRequiredMixin
 from blog.models import Post
 
 
-class HomeView(LoginRequiredMixin,ListView):
+class HomeView(ListView):
     model = Post
     context_object_name = 'post_list'
     template_name='home.html'
+    
