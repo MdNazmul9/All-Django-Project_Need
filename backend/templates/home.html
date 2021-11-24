@@ -5,6 +5,8 @@
 {% endblock title %}
 
 {% block content %}
+<div>
+
 <h1>Homepage</h1>
 {% if user.is_authenticated %}
 Hi {{ user.email }}!
@@ -13,4 +15,20 @@ Hi {{ user.email }}!
 <p>You are not logged in</p>
 <a href="{% url 'login' %}">Log In</a>
 {% endif %}
+<hr>
+<hr>
+
+ </div>
+
+
+ <div>
+    {% for post in post_list %}
+    <h1> Title: {{ post.title }}</h1> 
+    <h4> Author: {{ post.author }}</h4> 
+    <p> Body: {{ post.body | safe}}</p> 
+   
+    <hr>
+    {% endfor %}
+ </div>
+
 {% endblock content %}
