@@ -5,12 +5,10 @@
 {% endblock title %}
 
 {% block content %}
-<div>
-
 <h1>Homepage</h1>
-{% comment %}
-  
 
+{% comment %}
+<div>
 {% if user.is_authenticated %}
 Hi {{ user.email }}!
 <p><a href="{% url 'logout' %}">Log Out</a></p>
@@ -20,8 +18,8 @@ Hi {{ user.email }}!
 {% endif %}
 <hr>
 <hr>
-{% endcomment %}
  </div>
+ {% endcomment %}
 
 
 
