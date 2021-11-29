@@ -59,11 +59,6 @@
           </div>
       </div>
   </header>
-
-
-
-
-
   <div class="container-fluid pb-3 flex-grow-1 d-flex flex-column flex-sm-row overflow-auto">
       <div class="row flex-grow-sm-1 flex-grow-0">
           <aside class="col-sm-3 flex-grow-sm-1 flex-shrink-1 flex-grow-0 sticky-top pb-sm-0 pb-3">
@@ -106,7 +101,6 @@
           </main>
       </div>
   </div>
-
 <!-- commented -->
 {% endcomment %}
 
@@ -138,22 +132,24 @@
           <div class="col-md-2">
           <a class="btn btn-outline-primary pull-right" href="" data-bs-toggle="dropdown" aria-expanded="false"><i class="far fa-user"></i></a>
 
-          <ul class="dropdown-menu">
+        <ul class="dropdown-menu">
             {% if user.is_authenticated %}
-            
-
+        
+        
             <li><a class="dropdown-item" href="#">{{request.user.username}}</a></li>
             <li><a class="dropdown-item" href="{% url 'logout' %}">Log Out</a></li>
-          {% else %}
-          <li><a class="dropdown-item" href="{% url 'login' %}">Log In</a></li>
-          <li><a class="dropdown-item" href="{% url 'signup' %}">Sign Up</a></li>
-          {% endif %}
-            
-            
+            {% else %}
+            <li><a class="dropdown-item" href="{% url 'login' %}">Log In</a></li>
+            <li><a class="dropdown-item" href="{% url 'signup' %}">Sign Up</a></li>
+            {% endif %}
+        
+        
             <li><a class="dropdown-item" href="#">Something else here</a></li>
-            <li><hr class="dropdown-divider"></li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
             <li><a class="dropdown-item" href="#">Separated link</a></li>
-          </ul>
+        </ul>
 
           </div>
 
