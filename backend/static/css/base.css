@@ -29,8 +29,9 @@ main {
     background-color: #eeeeff;
     background-clip: content-box;
 }*/
+
 #sidebar-nav {
-    min-width: 230px;
+    min-width: 200px;
     /* background-color:black */
 }
 .website{
@@ -38,3 +39,6 @@ main {
     /* border: 1px */
 
 }
+/* .top-navbar{
+    background-color:aqua
+} */

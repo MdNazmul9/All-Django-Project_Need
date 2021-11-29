@@ -25,7 +25,10 @@
 
   </head>
   <body>
-    <header class="py-3 mb-4 border-bottom shadow">
+     <header class="py-3 mb-4 border-bottom shadow bg-dark p-2 text-dark bg-opacity-50">
+    <!-- <header class="py-3 mb-4 border-bottom shadow  bg-success p-2 text-dark bg-opacity-10"> -->
+    <!-- <header class="py-3 mb-4 border-bottom shadow bg-info"> -->
+
       <div class="container-fluid align-items-center d-flex">
 
         <div class="flex-grow-1 d-flex align-items-center">
@@ -33,7 +36,6 @@
               
                <a href="{% url 'home' %}"  class="text-decoration-none"> <h4>EMS &nbsp;&nbsp;&nbsp;&nbsp;</h4></a>
             </div>
-
 
           <div class="flex-grow-1 d-flex align-items-center">
             <div class="flex-shrink-0 ">
@@ -51,7 +53,7 @@
             <!-- <a href="#" data-bs-target="#sidebar" data-bs-toggle="collapse" class="border rounded-3 p-1 text-decoration-none"><i class="bi bi-list"></i></a> -->
             
               <form class="w-100 me-3">
-                  <input type="search" class="form-control" placeholder="Search...">
+                  <input type="search" class="form-control bg-dark p-2 text-dark bg-opacity-10" placeholder="Search...">
               </form>
               <div class="flex-shrink-0 dropdown">
                   <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
@@ -94,12 +96,12 @@
       </div>
   </header>
 
-  <div class="container-fluid">
+  <div class="container-fluid ">
     <div class="row flex-nowrap">
         <div class="col-auto px-0">
             <div id="sidebar" class="collapse collapse-horizontal show border-end">
                 
-                <div id="sidebar-nav" class="list-group border-0 rounded-0 text-sm-start min-vh-100">
+                <div id="sidebar-nav" class="list-group border-0 rounded-0 text-sm-start min-vh-100 bg-dark p-2 text-dark bg-opacity-10">
                     <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                         <li>
                             <a href="#submenu4" data-bs-toggle="collapse" class="nav-link px-2 align-middle">
@@ -178,6 +180,7 @@
                         </li>
                     </ul>
                     </div>
+
 
             </div>
         </div>
