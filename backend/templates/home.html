@@ -1,25 +1,11 @@
-{% extends '_base.html' %}
+{% extends 'front_base.html' %}
 {% block title %}
-
+home
 {% endblock title %}
 
 {% block content %}
 
-<h3>EMS User Dashboard page</h3>
-
-{% comment %}
-    <div>
-    {% if user.is_authenticated %}
-    Hi {{ user.email }}!
-    <p><a href="{% url 'logout' %}">Log Out</a></p>
-    {% else %}
-    <p>You are not logged in</p>
-    <a href="{% url 'login' %}">Log In</a>
-    {% endif %}
-    <hr>
-    <hr>
-    </div>
-{% endcomment %}
+<h3>Hello from docker</h3>
 
 
 {% endblock content %}
