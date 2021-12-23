@@ -40,8 +40,6 @@ docker run --publish 8000:8000 python-django
 ## Part-1
 ### Run Project with docker:
 
-     #### CMD 
-     
      ```
      docker build --tag python-django .
      ```
