@@ -23,23 +23,18 @@ docker build --tag python-django .
 docker run --publish 8000:8000 python-django
 ```
 
+# Run Project:
+  - 1. clone the project
+  - 2. Build projct ``` docker-compose build ```
+  - 3. Run projct ``` docker-compose up ```
+  - 4. Run projct ``` docker-compose down ```
+
+
 ### Docker Basic Info
 ![Docker Basic 1.1 ](https://github.com/MdNazmul9/All-Django-Project_Need/blob/main/backend/doc/1.1.png)
 ![Docker Basic 1.2 ](https://github.com/MdNazmul9/All-Django-Project_Need/blob/main/backend/doc/1.2.png)
 ![Docker Basic 1.1 ](https://github.com/MdNazmul9/All-Django-Project_Need/blob/main/backend/doc/2.1.png)
 ![Docker Basic 1.2 ](https://github.com/MdNazmul9/All-Django-Project_Need/blob/main/backend/doc/2.2.png)
-
-
-# Run Project:
-  - 1. clone the project
-  - 2. 
-  ```
-  docker-compose build
-  docker-compose up
-  docker-compose down
-  ```
-
-
 
 
 ## Part-1
