@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    # path where docker file exists
+    volumes:
+      - .:/django/ems
+      # copy project_dir_to: Dockerfile Working Dir
+    ports:
+      - 8000:8000
+    image: app:django_ems
+    container_name: django_ems_container
+    command: python manage.py runserver 0.0.0.0:8000
+
+     
+
+    
