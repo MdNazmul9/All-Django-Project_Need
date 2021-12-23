@@ -1,7 +1,5 @@
 # Django4_Basic
 
-## Run Using Docker
-  Place .env File First 
 #### Step 1 : First Install docker & docker-compose (if already installed then skip this step)
 ```
 sudo apt update
@@ -23,11 +21,13 @@ docker build --tag python-django .
 docker run --publish 8000:8000 python-django
 ```
 
-# Run Project:
+
+## Run Using Docker
   - 1. clone the project
-  - 2. Build projct ``` docker-compose build ```
-  - 3. Run projct ``` docker-compose up ```
-  - 4. Run projct ``` docker-compose down ```
+  - 2. Place .env File First 
+  - 3. Build projct ``` docker-compose build ```
+  - 4. Run projct ``` docker-compose up ```
+  - 5. Down/Stop projct ``` docker-compose down ```
 
 
 ### Docker Basic Info
