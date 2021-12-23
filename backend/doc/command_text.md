@@ -82,4 +82,12 @@
      ```
 
 
+## Part-3
+### Run Project with docker-compose  and intrgrate database:
+     #### CMD 
+     - 1. ``` docker-compose build ```
+     - 2. ``` docker-compose run -rm app django-admin startproject core . ```
+     - 3. ``` docker-compose up ```
+     - 4. ``` docker exec -it django_app/bin/bash ```
+
     
