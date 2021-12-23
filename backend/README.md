@@ -39,7 +39,9 @@ docker run --publish 8000:8000 python-django
 
 ## Part-1
 ### Run Project with docker:
+
      #### CMD 
+     
      ```
      docker build --tag python-django .
      ```
@@ -65,6 +67,7 @@ docker run --publish 8000:8000 python-django
 
 ## Part-2
 ### Run Project with docker compose :
+
      #### CMD 
 
      ```
@@ -121,7 +124,9 @@ docker run --publish 8000:8000 python-django
 
 ## Part-3
 ### Run Project with docker-compose  and intrgrate database:
+    
      #### CMD 
+
      - 1. ``` docker-compose build ```
      - 2. ``` docker-compose run -rm app django-admin startproject core . ```
      - 3. ``` docker-compose up ```
