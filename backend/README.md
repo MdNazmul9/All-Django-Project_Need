@@ -40,30 +40,30 @@ docker run --publish 8000:8000 python-django
 ## Part-1
 ### Run Project with docker
 
-     #### CMD 
+  #### CMD 
      
-     ```
-     docker build --tag python-django .
-     ```
-     ```
-     docker run --publish 8000:8000 python-django
+  ```
+  docker build --tag python-django .
+  ```
+  ```
+  docker run --publish 8000:8000 python-django
 
-     ```
-     #### .dockerignore.
-     ```
-          */venv
-     ```
-     #### Dockerfile
-     ```
-     FROM python:3.8-slim-buster
+  ```
+  #### .dockerignore.
+  ```
+      */venv
+  ```
+  #### Dockerfile
+  ```
+  FROM python:3.8-slim-buster
 
-     WORKDIR /app
+  WORKDIR /app
 
-     COPY requirements.txt requirements.txt
-     RUN pip3 install -r requirements.txt
-     COPY . .
-     CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
-     ```
+  COPY requirements.txt requirements.txt
+  RUN pip3 install -r requirements.txt
+  COPY . .
+  CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
+  ```
 
 ## Part-2
 ### Run Project with docker compose :
